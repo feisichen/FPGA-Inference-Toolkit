@@ -6,6 +6,9 @@ __pycache__/
 .idea/
 .vscode/
 
+# Temporary multi-agent handoff files
+.agent-tmp/
+
 # Generated output from Python/GUI
 output/
 

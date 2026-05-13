@@ -6,6 +6,10 @@ __pycache__/
 .idea/
 .vscode/
 
+# Local agent/skill configuration
+AGENTS.md
+skills/
+
 # Temporary multi-agent handoff files
 .agent-tmp/
 

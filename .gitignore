@@ -1,0 +1,40 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# IDE/editor state
+.idea/
+.vscode/
+
+# Generated output from Python/GUI
+output/
+
+# Native build outputs
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.pdb
+
+# OpenCL/FPGA generated build products
+*.aocx
+*.aoco
+*.aocr
+*.sof
+*.xclbin
+*.rpt
+*.sv
+*.efisim
+*.tmp
+*.temp
+*.dir
+*.source
+*.jou
+*.mon
+xocc*
+sdaccel*
+template/yolo/device/*.ll
+
+# Keep checked-in RTL library artifacts that are required by the template.
+!template/yolo/device/RTL/rtl_lib.aoco

@@ -1,0 +1,4068 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "class": "GlobalMemoryNode",
+      "name": "GLOBAL_MEMORY_0",
+      "view_name": "GLOBAL_MEMORY_0",
+      "pos": [
+        1358.546142578124,
+        -173.67675781249977
+      ],
+      "width": 400,
+      "height": 250,
+      "in_sockets": [
+        {
+          "name": "Write_In",
+          "volume": 0,
+          "is_input": true,
+          "is_reentrant": true
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "image",
+          "volume": 1638400,
+          "is_input": false,
+          "is_reentrant": true
+        },
+        {
+          "name": "layer1",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": true
+        },
+        {
+          "name": "layer7",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": true
+        },
+        {
+          "name": "layer14",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": true
+        },
+        {
+          "name": "layer15",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": true
+        },
+        {
+          "name": "layer20",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": true
+        }
+      ],
+      "stored_datas": {
+        "image": {
+          "name": "image",
+          "volume": 1638400
+        },
+        "layer1": {
+          "name": "layer1",
+          "volume": 819200
+        },
+        "layer7": {
+          "name": "layer7",
+          "volume": 409600
+        },
+        "layer14": {
+          "name": "layer14",
+          "volume": 409600
+        },
+        "layer15": {
+          "name": "layer15",
+          "volume": 204800
+        },
+        "layer20": {
+          "name": "layer20",
+          "volume": 102400
+        }
+      },
+      "_id": 1930588002480
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_31",
+      "view_name": "/model.24/m.0/Conv",
+      "pos": [
+        -269.0,
+        -189.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 480000,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": false,
+      "parallelism": 1,
+      "input_size": 409600,
+      "output_size": 480000,
+      "is_bypass": false,
+      "_id": 1930588002048
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_32",
+      "view_name": "/model.24/m.1/Conv",
+      "pos": [
+        -49.39062500000001,
+        -190.95312500000003
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 120000,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": false,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 120000,
+      "is_bypass": false,
+      "_id": 1930588001616
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_33",
+      "view_name": "/model.24/m.2/Conv",
+      "pos": [
+        277.6406249999997,
+        -192.90625
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 30000,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": false,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 30000,
+      "is_bypass": false,
+      "_id": 1930588001184
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_0",
+      "view_name": "/model.0/conv/Conv",
+      "pos": [
+        719.0273437499998,
+        505.5117187499999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 1638400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 1638400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 1638400,
+      "output_size": 1638400,
+      "is_bypass": false,
+      "_id": 1930588000752
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_1",
+      "view_name": "/model.1/conv/Conv",
+      "pos": [
+        731.625,
+        689.75
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 1638400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 1638400,
+      "output_size": 819200,
+      "is_bypass": false,
+      "_id": 1930588000320
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_15",
+      "view_name": "/model.2/cv1/conv/Conv",
+      "pos": [
+        988.2265624999998,
+        536.8007812499997
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 819200,
+      "output_size": 409600,
+      "is_bypass": false,
+      "_id": 1930587987536
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_16",
+      "view_name": "/model.2/cv2/conv/Conv",
+      "pos": [
+        1227.7968750000005,
+        528.7343750000001
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 819200,
+      "output_size": 409600,
+      "is_bypass": false,
+      "_id": 1930587987392
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_18",
+      "view_name": "/model.2/m/m.0/cv1/conv/Conv",
+      "pos": [
+        971.4882812499995,
+        853.4999999999999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 409600,
+      "output_size": 409600,
+      "is_bypass": true,
+      "_id": 1930587986672
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_19",
+      "view_name": "/model.2/m/m.0/cv2/conv/Conv",
+      "pos": [
+        978.3046874999993,
+        1018.4414062499993
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 409600,
+      "output_size": 409600,
+      "is_bypass": true,
+      "_id": 1930587985664
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_17",
+      "view_name": "/model.2/cv3/conv/Conv",
+      "pos": [
+        1228.5781249999993,
+        854.1835937499998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 8,
+      "input_size": 819200,
+      "output_size": 819200,
+      "is_bypass": false,
+      "_id": 1930587985232
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_34",
+      "view_name": "/model.3/conv/Conv",
+      "pos": [
+        1229.2421874999998,
+        1009.7695312499995
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 819200,
+      "output_size": 409600,
+      "is_bypass": false,
+      "_id": 1930587984800
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_35",
+      "view_name": "/model.4/cv1/conv/Conv",
+      "pos": [
+        1533.1289062499993,
+        547.1718749999998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 409600,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587984368
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_36",
+      "view_name": "/model.4/cv2/conv/Conv",
+      "pos": [
+        1817.6249999999989,
+        523.9101562500002
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 409600,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587984224
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_38",
+      "view_name": "/model.4/m/m.0/cv1/conv/Conv",
+      "pos": [
+        1536.3124999999993,
+        886.5273437499994
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": true,
+      "_id": 1930587975248
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_39",
+      "view_name": "/model.4/m/m.0/cv2/conv/Conv",
+      "pos": [
+        1534.4374999999995,
+        1033.4023437499998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": true,
+      "_id": 1930587974528
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_40",
+      "view_name": "/model.4/m/m.1/cv1/conv/Conv",
+      "pos": [
+        1505.4531249999995,
+        1505.6875
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": true,
+      "_id": 1930587973808
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_41",
+      "view_name": "/model.4/m/m.1/cv2/conv/Conv",
+      "pos": [
+        1505.6874999999986,
+        1680.687499999999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": true,
+      "_id": 1930587972800
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_37",
+      "view_name": "/model.4/cv3/conv/Conv",
+      "pos": [
+        1816.825195312499,
+        893.7734374999997
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 8,
+      "input_size": 409600,
+      "output_size": 409600,
+      "is_bypass": false,
+      "_id": 1930587972368
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_42",
+      "view_name": "/model.5/conv/Conv",
+      "pos": [
+        1807.308593749999,
+        1215.5507812499993
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 409600,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587971936
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_43",
+      "view_name": "/model.6/cv1/conv/Conv",
+      "pos": [
+        1797.9140624999986,
+        1548.5585937499993
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 4,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587955056
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_44",
+      "view_name": "/model.6/cv2/conv/Conv",
+      "pos": [
+        -269.0,
+        131.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587954912
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_46",
+      "view_name": "/model.6/m/m.0/cv1/conv/Conv",
+      "pos": [
+        1796.898437499998,
+        1870.160156249998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": true,
+      "_id": 1930587954192
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_47",
+      "view_name": "/model.6/m/m.0/cv2/conv/Conv",
+      "pos": [
+        1799.9843749999982,
+        2040.3749999999982
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": true,
+      "_id": 1930587953472
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_48",
+      "view_name": "/model.6/m/m.1/cv1/conv/Conv",
+      "pos": [
+        1787.9335937499984,
+        2508.929687499996
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": true,
+      "_id": 1930587952752
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_49",
+      "view_name": "/model.6/m/m.1/cv2/conv/Conv",
+      "pos": [
+        1777.6406249999977,
+        2664.8281249999977
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_bypass",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output_bypass",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 2,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": true,
+      "_id": 1930587951744
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_50",
+      "view_name": "/model.6/m/m.2/cv1/conv/Conv",
+      "pos": [
+        -484.6249999999998,
+        28.187500000000227
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587951312
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_51",
+      "view_name": "/model.6/m/m.2/cv2/conv/Conv",
+      "pos": [
+        -22.046875000000085,
+        91.85937500000011
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587946720
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_45",
+      "view_name": "/model.6/cv3/conv/Conv",
+      "pos": [
+        345.60937499999943,
+        -42.51562499999964
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587946288
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_52",
+      "view_name": "/model.7/conv/Conv",
+      "pos": [
+        606.6249999999993,
+        -53.06249999999969
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587945856
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_53",
+      "view_name": "/model.8/cv1/conv/Conv",
+      "pos": [
+        489.12499999999966,
+        270.3749999999999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587945424
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_54",
+      "view_name": "/model.8/cv2/conv/Conv",
+      "pos": [
+        -269.0,
+        291.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587944992
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_56",
+      "view_name": "/model.8/m/m.0/cv1/conv/Conv",
+      "pos": [
+        -149.0,
+        291.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 51200,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587944560
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_57",
+      "view_name": "/model.8/m/m.0/cv2/conv/Conv",
+      "pos": [
+        -29.0,
+        291.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 51200,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587944128
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_55",
+      "view_name": "/model.8/cv3/conv/Conv",
+      "pos": [
+        135.04296874999991,
+        275.57031250000006
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587943696
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_58",
+      "view_name": "/model.9/cv1/conv/Conv",
+      "pos": [
+        333.26562499999994,
+        137.87500000000028
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587943264
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_59",
+      "view_name": "/model.9/cv2/conv/Conv",
+      "pos": [
+        -269.0,
+        371.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587934576
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_2",
+      "view_name": "/model.10/conv/Conv",
+      "pos": [
+        -149.0,
+        371.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587934144
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_3",
+      "view_name": "/model.13/cv1/conv/Conv",
+      "pos": [
+        -29.0,
+        371.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 409600,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587933712
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_4",
+      "view_name": "/model.13/cv2/conv/Conv",
+      "pos": [
+        91.0,
+        371.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 409600,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587933280
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_6",
+      "view_name": "/model.13/m/m.0/cv1/conv/Conv",
+      "pos": [
+        211.0,
+        371.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587932848
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_7",
+      "view_name": "/model.13/m/m.0/cv2/conv/Conv",
+      "pos": [
+        -269.0,
+        451.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587932416
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_5",
+      "view_name": "/model.13/cv3/conv/Conv",
+      "pos": [
+        -149.0,
+        451.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587931984
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_8",
+      "view_name": "/model.14/conv/Conv",
+      "pos": [
+        -29.0,
+        451.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587931552
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_9",
+      "view_name": "/model.17/cv1/conv/Conv",
+      "pos": [
+        91.0,
+        451.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 819200,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587931120
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_10",
+      "view_name": "/model.17/cv2/conv/Conv",
+      "pos": [
+        211.0,
+        451.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 819200,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587930688
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_12",
+      "view_name": "/model.17/m/m.0/cv1/conv/Conv",
+      "pos": [
+        -269.0,
+        531.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587913808
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_13",
+      "view_name": "/model.17/m/m.0/cv2/conv/Conv",
+      "pos": [
+        -149.0,
+        531.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587913376
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_11",
+      "view_name": "/model.17/cv3/conv/Conv",
+      "pos": [
+        -29.0,
+        531.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 409600,
+      "output_size": 409600,
+      "is_bypass": false,
+      "_id": 1930587912944
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_14",
+      "view_name": "/model.18/conv/Conv",
+      "pos": [
+        91.0,
+        531.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 409600,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587912512
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_20",
+      "view_name": "/model.20/cv1/conv/Conv",
+      "pos": [
+        211.0,
+        531.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587912080
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_21",
+      "view_name": "/model.20/cv2/conv/Conv",
+      "pos": [
+        -269.0,
+        611.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587911648
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_23",
+      "view_name": "/model.20/m/m.0/cv1/conv/Conv",
+      "pos": [
+        -149.0,
+        611.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587911216
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_24",
+      "view_name": "/model.20/m/m.0/cv2/conv/Conv",
+      "pos": [
+        -29.0,
+        611.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587910784
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_22",
+      "view_name": "/model.20/cv3/conv/Conv",
+      "pos": [
+        91.0,
+        611.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 204800,
+      "is_bypass": false,
+      "_id": 1930587910352
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_25",
+      "view_name": "/model.21/conv/Conv",
+      "pos": [
+        211.0,
+        611.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 204800,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587905760
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_26",
+      "view_name": "/model.23/cv1/conv/Conv",
+      "pos": [
+        -269.0,
+        691.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587905328
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_27",
+      "view_name": "/model.23/cv2/conv/Conv",
+      "pos": [
+        -149.0,
+        691.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587904896
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_29",
+      "view_name": "/model.23/m/m.0/cv1/conv/Conv",
+      "pos": [
+        -29.0,
+        691.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 51200,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587904464
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_30",
+      "view_name": "/model.23/m/m.0/cv2/conv/Conv",
+      "pos": [
+        91.0,
+        691.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 51200,
+      "output_size": 51200,
+      "is_bypass": false,
+      "_id": 1930587904032
+    },
+    {
+      "class": "ConvNode",
+      "name": "Conv_28",
+      "view_name": "/model.23/cv3/conv/Conv",
+      "pos": [
+        211.0,
+        691.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "is_csm": true,
+      "parallelism": 1,
+      "input_size": 102400,
+      "output_size": 102400,
+      "is_bypass": false,
+      "_id": 1930587903456
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_5",
+      "view_name": "/model.2/Concat",
+      "pos": [
+        1228.9882812499998,
+        701.0000000000002
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 409600,
+      "input_y_size": 409600,
+      "_id": 1930587902880
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_13",
+      "view_name": "/model.4/Concat",
+      "pos": [
+        1810.2285156249989,
+        722.0498046874999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 204800,
+      "input_y_size": 204800,
+      "_id": 1930587902304
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_14",
+      "view_name": "/model.6/Concat",
+      "pos": [
+        161.62499999999977,
+        1203.8124999999995
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 102400,
+      "input_y_size": 102400,
+      "_id": 1930587889376
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_15",
+      "view_name": "/model.8/Concat",
+      "pos": [
+        91.0,
+        771.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 51200,
+      "input_y_size": 51200,
+      "_id": 1930587888800
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_16",
+      "view_name": "/model.9/Concat",
+      "pos": [
+        211.0,
+        771.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 51200,
+      "input_y_size": 51200,
+      "_id": 1930587888224
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_0",
+      "view_name": "/model.12/Concat",
+      "pos": [
+        -269.0,
+        851.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 204800,
+      "input_y_size": 204800,
+      "_id": 1930587887648
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_1",
+      "view_name": "/model.13/Concat",
+      "pos": [
+        -149.0,
+        851.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 102400,
+      "input_y_size": 102400,
+      "_id": 1930587886928
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_2",
+      "view_name": "/model.16/Concat",
+      "pos": [
+        -29.0,
+        851.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 409600,
+      "input_y_size": 409600,
+      "_id": 1930587886352
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_3",
+      "view_name": "/model.17/Concat",
+      "pos": [
+        91.0,
+        851.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 204800,
+      "input_y_size": 204800,
+      "_id": 1930587885776
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_4",
+      "view_name": "/model.19/Concat",
+      "pos": [
+        211.0,
+        851.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 102400,
+      "input_y_size": 102400,
+      "_id": 1930587872848
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_6",
+      "view_name": "/model.20/Concat",
+      "pos": [
+        -269.0,
+        931.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 102400,
+      "input_y_size": 102400,
+      "_id": 1930587872272
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_7",
+      "view_name": "/model.22/Concat",
+      "pos": [
+        -149.0,
+        931.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 51200,
+      "input_y_size": 51200,
+      "_id": 1930587871696
+    },
+    {
+      "class": "ConcatNode",
+      "name": "Concat_8",
+      "view_name": "/model.23/Concat",
+      "pos": [
+        -29.0,
+        931.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "input_x_size": 51200,
+      "input_y_size": 51200,
+      "_id": 1930587871120
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_0",
+      "view_name": "/model.2/m/m.0/Add",
+      "pos": [
+        964.9257812499986,
+        1192.4257812499986
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1930587870544
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_4",
+      "view_name": "/model.4/m/m.0/Add",
+      "pos": [
+        1517.6406249999993,
+        1200.9218750000002
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 204800,
+      "_id": 1930587869968
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_5",
+      "view_name": "/model.4/m/m.1/Add",
+      "pos": [
+        1505.2499999999986,
+        1831.125
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 204800,
+      "_id": 1930587869392
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_6",
+      "view_name": "/model.6/m/m.0/Add",
+      "pos": [
+        1799.7499999999973,
+        2194.124999999998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 102400,
+      "_id": 1932121890384
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_7",
+      "view_name": "/model.6/m/m.1/Add",
+      "pos": [
+        1769.4960937499973,
+        2819.535156249996
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 102400,
+      "_id": 1932121889808
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_8",
+      "view_name": "/model.6/m/m.2/Add",
+      "pos": [
+        91.0,
+        1011.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 102400,
+      "_id": 1932121889232
+    },
+    {
+      "class": "AddNode",
+      "name": "Add_9",
+      "view_name": "/model.8/m/m.0/Add",
+      "pos": [
+        211.0,
+        1011.0
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input_x",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        },
+        {
+          "name": "input_y",
+          "volume": 51200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 51200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 51200,
+      "_id": 1932121888800
+    },
+    {
+      "class": "MemReadNode",
+      "name": "Mem_Read0",
+      "view_name": "Mem_Read0",
+      "pos": [
+        725.6249999999998,
+        353.74999999999994
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 1638400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 1638400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 1638400,
+      "_id": 1932121888368
+    },
+    {
+      "class": "MemWriteNode",
+      "name": "MEM_WRITE0",
+      "view_name": "MEM_WRITE0",
+      "pos": [
+        727.4999999999998,
+        855.3124999999999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 819200,
+      "_id": 1932121887936
+    },
+    {
+      "class": "MemReadNode",
+      "name": "Mem_Read1",
+      "view_name": "Mem_Read1",
+      "pos": [
+        986.8554687499998,
+        364.51171874999983
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 819200,
+      "_id": 1932121887504
+    },
+    {
+      "class": "MemWriteNode",
+      "name": "MEM_WRITE1",
+      "view_name": "MEM_WRITE1",
+      "pos": [
+        1238.2812499999995,
+        1192.4804687500005
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1932121886928
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork0",
+      "view_name": "Fork0",
+      "pos": [
+        976.7578124999995,
+        696.2890624999998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1932121894624
+    },
+    {
+      "class": "MemReadNode",
+      "name": "Mem_Read2",
+      "view_name": "Mem_Read2",
+      "pos": [
+        1217.6757812499993,
+        368.1640625
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 819200,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 819200,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 819200,
+      "_id": 1932121894192
+    },
+    {
+      "class": "MemReadNode",
+      "name": "Mem_Read3",
+      "view_name": "Mem_Read3",
+      "pos": [
+        1535.6445312499993,
+        375.97656249999983
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1932121893616
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork1",
+      "view_name": "Fork1",
+      "pos": [
+        1516.9531249999993,
+        703.0664062499997
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 204800,
+      "_id": 1932121893040
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork2",
+      "view_name": "Fork2",
+      "pos": [
+        1523.2031249999993,
+        1357.7343749999995
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 204800,
+      "_id": 1932121892608
+    },
+    {
+      "class": "MemReadNode",
+      "name": "Mem_Read4",
+      "view_name": "Mem_Read4",
+      "pos": [
+        1806.703124999999,
+        367.8906249999998
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1932121892032
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork3",
+      "view_name": "Fork3",
+      "pos": [
+        1791.406249999999,
+        1037.480468749999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1932121891600
+    },
+    {
+      "class": "MemWriteNode",
+      "name": "MEM_WRITE2",
+      "view_name": "MEM_WRITE2",
+      "pos": [
+        2073.10546875,
+        1042.734374999999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 409600,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 409600,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 409600,
+      "_id": 1932121891168
+    },
+    {
+      "class": "MemWriteNode",
+      "name": "MEM_WRITE3",
+      "view_name": "MEM_WRITE3",
+      "pos": [
+        2069.4335937499986,
+        1374.1210937499993
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 204800,
+      "_id": 1932121701248
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork4",
+      "view_name": "Fork4",
+      "pos": [
+        1797.4609374999986,
+        1368.515624999999
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 204800,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 204800,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 204800,
+      "_id": 1932121701824
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork5",
+      "view_name": "Fork5",
+      "pos": [
+        1806.6406249999986,
+        1712.0361328124986
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 102400,
+      "_id": 1932121702256
+    },
+    {
+      "class": "ForkNode",
+      "name": "Fork6",
+      "view_name": "Fork6",
+      "pos": [
+        1780.9570312499973,
+        2348.3593749999964
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output1",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        },
+        {
+          "name": "output2",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 102400,
+      "_id": 1932121700960
+    },
+    {
+      "class": "MemWriteNode",
+      "name": "MEM_WRITE4",
+      "view_name": "MEM_WRITE4",
+      "pos": [
+        2107.4218749999973,
+        2812.499999999996
+      ],
+      "width": 200,
+      "height": 120,
+      "in_sockets": [
+        {
+          "name": "input",
+          "volume": 102400,
+          "is_input": true,
+          "is_reentrant": false
+        }
+      ],
+      "out_sockets": [
+        {
+          "name": "output",
+          "volume": 102400,
+          "is_input": false,
+          "is_reentrant": false
+        }
+      ],
+      "data_size": 102400,
+      "_id": 1932121700384
+    }
+  ],
+  "edges": [
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588002480,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121888368,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 4,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121888368,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588000752,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 5120,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588000752,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588000320,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588000320,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121887936,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": "layer1",
+      "start_node_id": 1932121887936,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588002480,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588002480,
+      "start_socket_idx": 1,
+      "end_node_id": 1932121887504,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121887504,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587987536,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587987536,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121894624,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121894624,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587986672,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121894624,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587986672,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587986672,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587985664,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587986672,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587985664,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587985664,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587870544,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587985664,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587870544,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588002480,
+      "start_socket_idx": 1,
+      "end_node_id": 1932121894192,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121894192,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587987392,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587987392,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587902880,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 16,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587870544,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587902880,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587902880,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587985232,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 5120,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587985232,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587984800,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587984800,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121886928,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": "layer7",
+      "start_node_id": 1932121886928,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588002480,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588002480,
+      "start_socket_idx": 2,
+      "end_node_id": 1932121893616,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121893616,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587984368,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587984368,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121893040,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121893040,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587975248,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121893040,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587975248,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587975248,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587974528,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587975248,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587974528,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587974528,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587869968,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587974528,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587869968,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587869968,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121892608,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121892608,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587973808,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121892608,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587973808,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587973808,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587972800,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587973808,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587972800,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587972800,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587869392,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587972800,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587869392,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930588002480,
+      "start_socket_idx": 2,
+      "end_node_id": 1932121892032,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121892032,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587984224,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587984224,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587902304,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 32,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587869392,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587902304,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587902304,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587972368,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587972368,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121891600,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 5120,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121891600,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121891168,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": "layer14",
+      "start_node_id": 1932121891168,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588002480,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 5120,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121891600,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587971936,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": "layer15",
+      "start_node_id": 1932121701248,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588002480,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 128,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587971936,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121701824,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 128,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121701824,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121701248,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 128,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121701824,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587955056,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587955056,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121702256,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121702256,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587954192,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121702256,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587954192,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587954192,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587953472,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587954192,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587953472,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587953472,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121890384,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587953472,
+      "start_socket_idx": 1,
+      "end_node_id": 1932121890384,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121890384,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121700960,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121700960,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587952752,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121700960,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587952752,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587952752,
+      "start_socket_idx": 0,
+      "end_node_id": 1930587951744,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587952752,
+      "start_socket_idx": 1,
+      "end_node_id": 1930587951744,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587951744,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121889808,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1930587951744,
+      "start_socket_idx": 1,
+      "end_node_id": 1932121889808,
+      "end_socket_idx": 1
+    },
+    {
+      "depth": 64,
+      "coarse_parallelism": 1,
+      "option": null,
+      "start_node_id": 1932121889808,
+      "start_socket_idx": 0,
+      "end_node_id": 1932121700384,
+      "end_socket_idx": 0
+    },
+    {
+      "depth": 1,
+      "coarse_parallelism": 1,
+      "option": "layer20",
+      "start_node_id": 1932121700384,
+      "start_socket_idx": 0,
+      "end_node_id": 1930588002480,
+      "end_socket_idx": 0
+    }
+  ],
+  "stored_datas": {
+    "image": {
+      "name": "image",
+      "volume": 1638400
+    },
+    "layer1": {
+      "name": "layer1",
+      "volume": 819200
+    },
+    "layer7": {
+      "name": "layer7",
+      "volume": 409600
+    },
+    "layer14": {
+      "name": "layer14",
+      "volume": 409600
+    },
+    "layer15": {
+      "name": "layer15",
+      "volume": 204800
+    },
+    "layer20": {
+      "name": "layer20",
+      "volume": 102400
+    }
+  }
+}

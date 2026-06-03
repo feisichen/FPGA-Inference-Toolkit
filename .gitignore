@@ -20,6 +20,8 @@ output/
 # Local scratch/config snapshots
 *.json
 *.bak
+*.webp
+*.txt
 
 # Root helper scripts that are not part of the public entry points
 /*.py

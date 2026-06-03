@@ -9,12 +9,22 @@ __pycache__/
 # Local agent/skill configuration
 AGENTS.md
 skills/
+.codex/
 
 # Temporary multi-agent handoff files
 .agent-tmp/
 
 # Generated output from Python/GUI
 output/
+
+# Local scratch/config snapshots
+*.json
+*.bak
+
+# Root helper scripts that are not part of the public entry points
+/*.py
+!/main.py
+!/static-quantize.py
 
 # Native build outputs
 *.o
